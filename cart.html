@@ -14,9 +14,196 @@
     integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
     crossorigin="anonymous"></script>
 </head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  .page {
+    text-align: center;
+    margin: 30px;
+  }
+
+  .cart-table {
+    width: 100%;
+    margin: 20px;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+  }
+
+  .cart-table th {
+    border: 1px solid #000000;
+
+  }
+
+  .product {
+    padding: 15px;
+    align-items: center;
+    text-align: left;
+    gap: 15px;
+  }
+
+  .product img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+  .box {
+    width: 500px;
+    border: #000000 1px solid;
+  }
+
+  .temporary {}
+
+  .transprt {
+    border-bottom: #000000 1px solid;
+
+  }
+
+  .total {}
+
+  .action-button {
+    display: flex;
+  }
+
+  .pay {
+    justify-items: flex-end;
+  }
+</style>
 
 <body>
-  <h1>Hello-Bootstrap</h1>
+  <main class="container">
+    <h1 class="page">GIỎ HÀNG CỦA BẠN</h1>
+
+    <table class="cart-table">
+
+      <thead>
+        <tr>
+          <th>Sản phẩm</th>
+          <th> Giá</th>
+          <th>Số lương</th>
+          <th>Giá</th>
+          <th>Xóa</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+
+          <td>
+            <div class="product">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/h/chu_t_fuhlen_d90s.png"
+                alt="">
+              <span>IPhone 14 Pro Max</span>
+            </div>
+          </td>
+
+          <td>18.990.000 VNĐ</td>
+
+          <td class="quantity">
+            <button id="reduce">-</button>
+            <input type="text" value="1">
+            <button id="increase">+</button>
+          </td>
+
+          <td>18.990.000 VNĐ</td>
+
+          <td><button class="btn-delete">🗑️</button></td>
+
+        </tr>
+        <tr>
+
+          <td>
+            <div class="product">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/f/r/frame_406_1_.png"
+                alt="">
+              <span>Tai Nghe LG</span>
+            </div>
+          </td>
+
+          <td>8.990.000 VNĐ</td>
+
+          <td class="quantity">
+            <button id="reduce">-</button>
+            <input type="text" value="1">
+            <button id="increase">+</button>
+          </td>
+
+          <td>8.990.000 VNĐ</td>
+
+          <td><button class="btn-delete">🗑️</button></td>
+
+        </tr>
+        <tr>
+
+          <td>
+            <div class="product">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/a/i/airpods-4-1_1_1.png"
+                alt="">
+              <span>Tai Nghe Airpod</span>
+            </div>
+          </td>
+
+          <td>3.990.000 VNĐ</td>
+
+          <td class="quantity">
+            <button id="reduce">-</button>
+            <input type="text" value="1">
+            <button id="increase">+</button>
+          </td>
+
+          <td>3.990.000 VNĐ</td>
+
+          <td><button class="btn-delete">🗑️</button></td>
+
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="wrapper">
+      <div class="box">
+        <div class="temporary">
+          <span>Tạm Tính</span>
+          <span class="price-temporary"></span>
+        </div>
+
+        <div class="transport">
+          <span>Phí vận chuyển</span>
+          <span class="price-transport">30.000 VNĐ</span>
+        </div>
+
+        <div class="total">
+          <span>Tổng cộng </span>
+          <span class="price-total"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="action-button">
+      <button class="shopping">Tiếp Tục Mua</button>
+      <button class="pay">Thanh Toán</button>
+    </div>
+
+  </main>
 </body>
 
 </html>
