@@ -1,0 +1,23 @@
+header a {
+    color: white;
+}
+
+header a:hover {
+    color: white;
+}
+
+section {
+    position: relative;
+}
+
+section img {
+    width: 100%;
+}
+
+section .hero-info {
+    position: absolute;
+    color: white;
+    top: 30%;
+    width: 30%;
+    height: 200px;
+}
